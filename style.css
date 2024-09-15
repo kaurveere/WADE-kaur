@@ -1,0 +1,170 @@
+/* TEKSTI STIILID */
+body {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 5;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+header h1 {
+    text-align: center;
+}
+header h2 {
+    font-weight: normal;
+    font-style: italic;
+}
+h2 {
+    text-align: center;
+    font-weight: bold;
+}
+.main {
+    padding: 20px;
+    border: 1px solid black;
+}
+.main img {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* VÕTA ÜHENDUST RETSEPTID SEKTSIOON */
+
+.meisttext{
+    display: flex;
+    justify-content: center;
+    gap:30px
+}
+
+.retseptid-container img {
+    max-width: 50%;
+    max-height: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* MEIST SEKTSIOON */
+
+.meist-container {
+    padding: 20px;
+}
+
+.meist-content {
+    display: flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap: 20px;
+}
+
+.meist-content p {
+    max-width: 50%;
+    min-width: 200px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.meist-content img {
+    max-width: 40%;
+    max-height: 40%;
+    min-height: 150px;
+    min-width: 200px;
+    object-fit: cover;
+}
+
+.meist-header {
+    text-align: left;
+    margin-left: 20px;
+    margin-right: 0;
+    margin-left: 50px;
+}
+
+/* ERINEVAD KÖÖGID SEKTSIOON */
+
+.countries {
+    display: flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    width: 100%;
+    gap: 20px;
+}
+
+.countries img {
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+/* FOOTERI SEKTSIOON */
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: lightgray;
+
+}
+
+.footer .text {
+    flex: 1;
+}
+
+.footer .icons {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.footer a {
+    margin-bottom: 5px;
+}
+
+.footer img {
+    object-fit: cover;
+    max-width: 50px;
+    max-width: 50px;
+}
+
+/* MOBIILI ERINDID */
+
+.mobiiliretsept {
+    display: none;
+}
+
+.mobiilijoon {
+    display: none;
+}
+
+@media (max-width: 950px) {
+    .mobiiliretsept {
+        display: flex;
+        justify-content: flex-start;
+        text-align: left;
+        margin-left: 20px;
+        margin-right: 0;
+        margin-left: 50px;
+    }
+    .mobiilijoon {
+        display: flex;
+        justify-content: center;
+    }
+    .retseptid-container img {
+        max-width: 100%;
+        max-height: 100%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .meist-content p {
+        max-width: 800%;
+        min-width: 200px;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .meist-content img {
+        display: none;
+    }
+}
+
+
